@@ -1,0 +1,42 @@
+== Trap
+
+Trap is an (extremely) incomplete UI for a multi-player game I am designing.
+
+The UI is built with FXRuby, which I learned this weekend. I'm a beginner
+with this minimally documented framework. I still haven't figured out how to
+do basic stuff like control the cursor. I'm building the widgets using a drawing
+canvas, which might be wrong, and makes for ugly aliasing.
+
+All I've done is build some custom widgets and connect them to each other with
+a barely complete MVC framework I wrote. I read that MVC has its roots in
+desktop applications, so I wanted to see how that works.
+
+You should be able to bring up the UI by running main.rb from a standard ruby
+installation on Windows.  FXRuby comes with the Windows installer.
+
+All the UI does at this point is display the opening position of the game,
+and allow you to build a proposal from the "traps." To understand what you
+are doing, you'll need a basic understanding of the rules:
+
+The Trap game depicted is between 5 players (black, red, blue, purple, and
+orange).
+
+A "trap" consists of 1-3 "captors", and 1-3 "captives." The captors are depicted
+as a ring around the circular captives.
+
+A Trap may "target" only one of the captives (the others will escape). In order
+to target a captive, all the captors must agree.
+
+Alternatively, any of the captors may choose to "release" all of the captives.
+
+When a trap is successfully targetted or released, it is replaced with a new
+trap, and the game continues.
+
+In this computer game, players may create "proposals" consisting of a group of
+suggestions as to which traps should be targetted, and which released.
+
+Once a proposal is created, if the right players approve it, it can be carried
+out. This functionality doesn't exist yet though.
+
+All you can do is build a proposal right now, but you are unable to save it.
+
