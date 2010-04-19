@@ -2,10 +2,12 @@
 
 Trap is an (extremely) incomplete UI for a multi-player game I am designing.
 
-The UI is built with FXRuby, which I learned this weekend. I'm a beginner
+The UI is built with FXRuby. I'm a beginner
 with this minimally documented framework. I still haven't figured out how to
 do basic stuff like control the cursor. I'm building the widgets using a drawing
 canvas, which might be wrong, and makes for ugly aliasing.
+
+I'm going to try GTK+ for Mac compatability soon.
 
 All I've done is build some custom widgets and connect them to each other with
 a barely complete MVC framework I wrote. I read that MVC has its roots in
